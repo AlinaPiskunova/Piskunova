@@ -1,0 +1,91 @@
+html{
+    background: url("cat dance.png")  repeat-y fixed,
+    url("8-Bit_Martini.png") repeat-y 100%  fixed,
+    url("Twilight_Sparkle_8_Bit.png") repeat-y 75%  fixed,
+    url("5a291f9047d7f3.5423325815126444962943.png") repeat-y 25%  fixed;
+    background-size: 300px;
+}
+main{
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+section {
+    width: 40vw;
+    height: 40vw;
+    background: white;
+    display: inline-block;
+    position: relative;
+    font-size: 0;
+    border: solid #aad7cc 10px;
+    -webkit-box-shadow: 33px 26px 52px -15px rgba(168,159,168,1);
+    -moz-box-shadow: 33px 26px 52px -15px rgba(168,159,168,1);
+    box-shadow: 33px 26px 52px -15px rgba(168,159,168,1);
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: matrix3d(0.9506,-0.26,0.21,0,0.26,0.7953999999999999,0.57,0,-0.21,-0.57,0.8036,0,0,0,0,1);
+}
+
+div {
+    width: 12.5%;
+    height: 12.5%;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+
+}
+
+div:nth-child(odd) {
+    background: white;
+}
+
+div:nth-child(even) {
+    background: #ffbdb7;
+}
+
+.sec:nth-child(odd) {
+    background: #ffbdb7;
+}
+
+.sec:nth-child(even) {
+    background: white;
+}
+
+div.round {
+     width: 70%;
+     height: 70%;
+     position: absolute;
+    background: #ffe985;
+    filter: drop-shadow(4px 6px  3px #622e1c);
+     border-radius: 50%;
+     margin: auto;
+     left: 0;
+     top: 0;
+     right: 0;
+     bottom: 0;
+ }
+div.round_b {
+    width: 70%;
+    height: 70%;
+    position: absolute;
+    /*background:radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 100%);*/
+    /*filter: drop-shadow(4px 6px  3px #626262);*/
+    /*border-radius: 50%;*/
+    background: url("972DD566-E4B6-482C-A1FE-02333825C531.PNG" ) no-repeat center;
+    background-size: contain;
+    filter: drop-shadow(4px 6px  3px #efab4d);
+    margin: auto;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
