@@ -1,0 +1,50 @@
+.board {
+    border: 10px solid #555;
+    width: 50vw;
+    height: 50vw;
+    margin: 100px auto;
+}
+/*.board:before {*/
+    /*content: '';*/
+    /*padding-top: 100%;*/
+    /*display: block;*/
+/*}*/
+.row {
+    height: 12.5%;
+    font-size: 0;
+}
+.row div {
+    width: 12.5%;
+    height: 100%;
+    background: #000000;
+   float: left;
+}
+.row:nth-child(odd) div {
+    margin-right: 12.5%;
+}
+.row:nth-child(even) div {
+    margin-left: 12.5%;
+}
+.row div:before {
+    content: '';
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    float: left;
+
+}
+.row:nth-child(1) div:before,
+.row:nth-child(2) div:before,
+.row:nth-child(3) div:before {
+    background: #2363cc;
+    margin-left: 5%;
+    margin-top: 2.5%;
+
+}
+.row:nth-last-child(1) div:before,
+.row:nth-last-child(2) div:before,
+.row:nth-last-child(3) div:before {
+    background: #cc523e;
+    margin-left: 5%;
+    margin-top: 2.5%;
+}
