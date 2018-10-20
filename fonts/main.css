@@ -27,6 +27,9 @@ p:last-of-type::before {
     font-size: 30px;
     font-weight: 300;
 }
+p:last-of-type{
+    font-style: italic;
+}
 div{
     width: 150px;
     height: 40px;
