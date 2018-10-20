@@ -1,0 +1,39 @@
+body{
+    margin:0;
+    font-family: sans-serif;
+    color: #6C7974;
+}
+.ba-container{
+    max-width: 1200px;
+    margin: 50px auto;
+}
+h1{
+    padding-left: 20px;
+}
+[class^=row] {
+    font-size: 0;  }
+[class^=row] .col{
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+    padding: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+.row-2 .col{
+    width: 50%;}
+img{
+    width: 100%;
+    height: auto;
+}
+.col.col-unit{
+    padding: 0;}
+
+.col-unit .row-3 .col{width: calc(100% / 3);
+}
+.row-6 .col{
+    width: calc(100% / 6);}
+.row-6 .col-2{
+    width: calc((100% / 6)*2);}
+.row-6 .col-3{
+    width: calc((100% / 6)*3);}
