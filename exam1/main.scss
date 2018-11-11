@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700');
+
+.cls-2 {
+  fill: #ffffff;
+}
+
+.cls-1 {
+  fill: #5474fd;
+}
+
+.cls-3 {
+  fill: #ff6363;
+}
+
+.cls-4 {
+  fill: #00a2ff;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+}
+
+body {
+  margin: 0;
+  .section-inner {
+    width: 1112px;
+    margin: 0 auto;
+
+    //position: relative;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+    a.btn {
+      display: block;
+      box-sizing: border-box;
+      text-align: center;
+      padding-top: 24px;
+      text-transform: uppercase;
+      color: white;
+      height: 60px;
+      width: 224px;
+      background: #5474fd;
+    }
+    .country-pres{
+      box-sizing: border-box;
+      width: 540px;
+height: 370px;
+    background: rgba(57,57,57, 0.9);
+    padding: 50px 30px;
+      p{
+        margin-bottom: 50px;
+      }
+  }
+  h2 {
+    text-transform: capitalize;
+    font-size: 36px;
+    margin-top: 0;
+  }
+    h3{
+      text-transform: uppercase;
+      font-size:20px;
+      margin: 35px 0 30px;
+    }
+  p {
+    line-height: 26px;
+  }}
+  .s1 {
+    .section-inner {
+      text-align: center;
+    }
+    padding-top: 167px;
+    height: 100vh;
+    min-height: 740px;
+    //position: relative;
+    background: #a9b5c8 url("img/s1.jpg") no-repeat center;
+    background-size: cover;
+    box-sizing: border-box;
+    h1 {
+      text-transform: uppercase;
+      font-size: 48px;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+    .under-title {
+      font-size: 22px;
+      letter-spacing: 0.2em;
+      font-weight: 400;
+    }
+    .search-form {
+      margin-top: 50px;
+
+      div {
+        display: inline-block;
+        [type='text'] {
+          height: 60px;
+          width: 500px;
+          border: 2px solid white;
+          background: white;
+          color: #3c3c3c;
+          //padding: 0;
+          box-sizing: border-box;
+          text-align: center;
+          letter-spacing: 0.2em;
+        }
+      }
+      .search-button {
+        position: relative;
+        img {
+          position: absolute;
+          left: 110px;
+          top: 14px;
+        }
+        [type='submit'] {
+          height: 60px;
+          width: 150px;
+          border: 2px solid white;
+          background: #5474fd;
+          margin: -5px;
+          color: white;
+          text-transform: uppercase;
+        }
+      }
+    }
+    .scroll {
+      display: block;
+      width: 100px;
+      color: white;
+      line-height: 35px;
+      margin: 120px auto;
+    }
+  }
+  #head {
+    height: 80px;
+    background: #5474fd;
+    .section-inner {
+      display: flex;
+      //flex-direction: row-reverse;
+
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        li {
+          a {
+            margin-left: 20px;
+
+            color: white;
+          }
+        }
+      }
+    }
+
+  }
+  .s2 {
+    min-height: 685px;
+    padding-top: 120px;
+    background: #a9b5c8 url("img/Rectangle 7.jpg") no-repeat center;
+    background-size: cover;
+    box-sizing: border-box;
+    .section-inner {
+      .explore {
+        float: left;
+        width: 540px;
+        box-sizing: border-box;
+        margin-top: 85px;
+        h2 {
+          margin-bottom: 70px;
+        }
+        p {
+          margin-bottom: 42px;
+          margin-top: 0;
+        }
+      }
+      .images {
+        width: 475px;
+        float: right;
+        [alt="great mount"] {
+          margin-left: 125px;
+        }
+      }
+    }
+  }
+  .s3 {
+    background: #333333;
+    height: 337px;
+    padding-top: 15px;
+    box-sizing: border-box;
+    .link-bar{
+      padding-top: 100px;
+      width: 960px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      background: url("img/Shape 1.png")no-repeat top;
+a{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  line-height: 60px;
+}
+    }
+  }
+  .s4{
+    min-height: 700px;
+    padding-top: 230px;
+    background: #a9b5c8 url("img/Rectangle 414.jpg") no-repeat center;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+  .s5{
+    min-height: 700px;
+    padding-top: 230px;
+    background: #a9b5c8 url("img/Rectangle 4141.jpg") no-repeat center;
+    background-size: cover;
+    box-sizing: border-box;
+    .country-pres{
+      float: right;
+    }
+  }
+}
+
