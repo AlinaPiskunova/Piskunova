@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+.cls-2 {
+  fill: #ffffff;
+}
+
+.cls-1 {
+  fill: #5474fd;
+}
+
+.cls-3 {
+  fill: #ff6363;
+}
+
+.cls-4 {
+  fill: #00a2ff;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+}
+
+body {
+  margin: 0;
+}
+body .section-inner {
+  width: 1112px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+}
+body .section-inner a {
+  text-decoration: none;
+  color: white;
+}
+body .section-inner a.btn {
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  padding-top: 24px;
+  text-transform: uppercase;
+  color: white;
+  height: 60px;
+  width: 224px;
+  background: #5474fd;
+}
+body .section-inner .country-pres {
+  box-sizing: border-box;
+  width: 540px;
+  height: 370px;
+  background: rgba(57, 57, 57, 0.9);
+  padding: 50px 30px;
+}
+body .section-inner .country-pres p {
+  margin-bottom: 50px;
+}
+body .section-inner h2 {
+  text-transform: capitalize;
+  font-size: 36px;
+  margin-top: 0;
+}
+body .section-inner h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 35px 0 30px;
+}
+body .section-inner p {
+  line-height: 26px;
+}
+body .s1 {
+  padding-top: 167px;
+  height: 100vh;
+  min-height: 740px;
+  background: #a9b5c8 url("img/s1.jpg") no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+body .s1 .section-inner {
+  text-align: center;
+}
+body .s1 h1 {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+body .s1 .under-title {
+  font-size: 22px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+body .s1 .search-form {
+  margin-top: 50px;
+}
+body .s1 .search-form div {
+  display: inline-block;
+}
+body .s1 .search-form div [type=text] {
+  height: 60px;
+  width: 500px;
+  border: 2px solid white;
+  background: white;
+  color: #3c3c3c;
+  box-sizing: border-box;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+body .s1 .search-form .search-button {
+  position: relative;
+}
+body .s1 .search-form .search-button img {
+  position: absolute;
+  left: 110px;
+  top: 14px;
+}
+body .s1 .search-form .search-button [type=submit] {
+  height: 60px;
+  width: 150px;
+  border: 2px solid white;
+  background: #5474fd;
+  margin: -5px;
+  color: white;
+  text-transform: uppercase;
+}
+body .s1 .scroll {
+  display: block;
+  width: 100px;
+  color: white;
+  line-height: 35px;
+  margin: 120px auto;
+}
+body #head {
+  height: 80px;
+  background: #5474fd;
+}
+body #head .section-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+body #head .section-inner ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+}
+body #head .section-inner ul li a {
+  margin-left: 20px;
+  color: white;
+}
+body .s2 {
+  min-height: 685px;
+  padding-top: 120px;
+  background: #a9b5c8 url("img/Rectangle 7.jpg") no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+body .s2 .section-inner .explore {
+  float: left;
+  width: 540px;
+  box-sizing: border-box;
+  margin-top: 85px;
+}
+body .s2 .section-inner .explore h2 {
+  margin-bottom: 70px;
+}
+body .s2 .section-inner .explore p {
+  margin-bottom: 42px;
+  margin-top: 0;
+}
+body .s2 .section-inner .images {
+  width: 475px;
+  float: right;
+}
+body .s2 .section-inner .images [alt="great mount"] {
+  margin-left: 125px;
+}
+body .s3 {
+  background: #333333;
+  height: 337px;
+  padding-top: 15px;
+  box-sizing: border-box;
+}
+body .s3 .link-bar {
+  padding-top: 100px;
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background: url("img/Shape 1.png") no-repeat top;
+}
+body .s3 .link-bar a {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  line-height: 60px;
+}
+body .s4 {
+  min-height: 700px;
+  padding-top: 230px;
+  background: #a9b5c8 url("img/Rectangle 414.jpg") no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+body .s5 {
+  min-height: 700px;
+  padding-top: 230px;
+  background: #a9b5c8 url("img/Rectangle 4141.jpg") no-repeat center;
+  background-size: cover;
+  box-sizing: border-box;
+}
+body .s5 .country-pres {
+  float: right;
+}
+
+/*# sourceMappingURL=main.css.map */
