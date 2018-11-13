@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico|Raleway:300,400,700,900');
+
+.cls-2 {
+  fill: #262626;
+}
+
+body {
+  margin: 0;
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+}
+
+section {
+  padding: 42px 165px;
+
+}
+
+.s1 {
+  height: 100vh;
+  min-height: 800px;
+  position: relative;
+  background: white url("img/img.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.section-inner {
+  max-width: 1170px;
+  margin: 0 auto;
+
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.s1 li {
+  list-style-type: none;
+
+}
+
+a {
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  height: 55px;
+}
+
+.s1 li a {
+  margin-left: 38px;
+
+  color: #262626;
+
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 50px;
+  color: #262626;
+}
+
+h1 {
+  margin-top: 230px;
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 34px;
+  color: #262626
+}
+
+h1.white {
+  color: white
+}
+
+p {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 27px;
+}
+
+.s1 p {
+  width: 374px;
+
+}
+
+a[class^=button] {
+  color: white;
+  -webkit-box-shadow: 3px 3px 6px -1px rgba(0, 0, 0, 0.49);
+  -moz-box-shadow: 3px 3px 6px -1px rgba(0, 0, 0, 0.49);
+  box-shadow: 3px 3px 6px -1px rgba(0, 0, 0, 0.49);
+}
+
+a.button {
+
+  background: #ff6033;
+  box-sizing: border-box;
+  padding: 18px 29px;
+
+  display: block;
+  text-transform: uppercase;
+}
+
+a.scroll1 {
+  position: absolute;
+  left: 50%;
+  margin-left: -12px;
+  bottom: 70px;
+}
+
+#s2 {
+  height: 100vh;
+  min-height: 800px;
+  position: relative;
+  background: #02b7b7 url("img/img2.png") no-repeat left;
+  background-size: auto;
+}
+
+#s2 .section-inner {
+  float: right;
+  color: white;
+}
+
+#s2 p {
+  width: 500px;
+}
+
+.s3 {
+  background: #70bfff;
+  min-height: 790px;
+
+  .section-inner {
+    background: url('img/tomatos.png') no-repeat right;
+    background-size: auto;
+    height: 100%;
+    min-height: 790px;
+    h1 {
+      float: right;
+      margin-top: 350px;
+    }
+    .button-bar {
+      margin-top: 180px;
+      height: 460px;
+      max-width: 400px;
+      display: inline-flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      //flex-direction: column;
+      a {
+        width: 400px;
+        height: 100px;
+        background: #ffffff;
+        color: #262626;
+        font-weight: bold;
+        display: flex;
+        justify-content: space-between;
+
+        align-items: center;
+        padding-right: 24px;
+        span {
+          width: 296px;
+          display: flex;
+          height: 100%;
+          justify-content: center;
+          border-right: solid #262626 1px;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+
+.s4 {
+  padding-top: 100px;
+  background-color: #ffe92f;
+  height: 1536px;
+  .txt-1 {
+    margin: 0 auto;
+    width: 630px;
+    text-align: center;
+    h1{
+      margin-top: 0;}}
+  [class^=row] {
+    font-size: 0;  }
+  [class^=row] .col{
+    display: inline-block;
+    vertical-align: top;
+    padding: 15px;
+    box-sizing: border-box;
+    height: 564px;
+  }
+.row-3{
+  .col{
+    width: calc(100%/3);
+  }
+  .col-2{
+    width: calc(100%/1.5);
+  }
+  .row-1{
+     .col {
+        width: 100%;
+        height: 50%;
+      }
+    }
+  }
+}
+
+
+

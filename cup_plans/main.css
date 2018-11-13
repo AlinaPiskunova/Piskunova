@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:400,700|Lato:300,400');
+.main-container {
+    display: flex;
+    padding: 49px 30px;
+    margin: 30px auto;
+    max-width: 1200px;
+    max-height: 600px;
+    box-sizing: border-box;
+    background: #fdde7e;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 360px;
+    height: 443px;
+    align-items: center;
+    border-radius: 3px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.item-gold {
+    height: 500px;
+}
+
+.price,.coffee-type{
+    font-family: 'Hind', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #02995b;
+    margin: 0;
+    }
+.coffee-type{
+    font-weight: normal;
+    color: black;
+font-size: 56px}
+.description{
+    font-family: Lato, sans-serif;
+    font-weight: 300;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+

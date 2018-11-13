@@ -1,0 +1,69 @@
+html, body{
+    min-height: 100%;
+}
+body {
+    background: url("main bg.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #909194;
+    line-height: 20px;
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+    color: #df2671;
+}
+
+.main {
+    max-width: 460px;
+    max-height: 470px;
+    padding: 30px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 3px 3px;
+    margin: 50px auto;
+}
+
+div {
+    margin-bottom: 15px;
+
+}
+
+[name="l-name"] {
+    margin-left: 14px;
+}
+
+.key {
+    font-weight: bold;
+    font-size: 24px;
+    color: black;
+    margin-bottom: 37px;
+}
+
+input {
+    width: 400px;
+    height: 40px;
+    background: #f0f0f0;
+    border-radius: 3px 3px;
+    border: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+[name$="name"] {
+    width: 190px;
+
+}
+
+[type="submit"] {
+    background: #df2671;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 50px;
+    -webkit-box-shadow: 3px 3px 0px 1px #bd1962;
+    -moz-box-shadow: 3px 3px 0px 1px #bd1962;
+    box-shadow: 3px 3px 0px 1px  #bd1962;
+}
