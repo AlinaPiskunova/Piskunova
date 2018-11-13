@@ -69,12 +69,9 @@ body .section-inner a.btn:hover {
   width: 229px;
   line-height: 65px;
   background: linear-gradient(45deg, #5474fd 0%, #5474fd 45%, #496bfe 45%, #496bfe 100%);
-  -webkit-box-shadow: -2px 7px 30px 0px #e8e8e8;
-  -moz-box-shadow: -2px 7px 30px 0px #e8e8e8;
-  box-shadow: -2px 7px 30px 0px #e8e8e8;
-}
-body .section-inner a:visited:not(.btn) {
-  color: #74FFF2;
+  -webkit-box-shadow: -1px 2px 11px 0px #757575;
+  -moz-box-shadow: -1px 2px 11px 0px #757575;
+  box-shadow: -1px 2px 11px 0px #757575;
 }
 body .section-inner p {
   margin: 0 0 44px;
@@ -294,6 +291,9 @@ body footer .section-inner {
 }
 body footer .section-inner p {
   margin: 20px 0 15px;
+}
+body footer .section-inner .link-bar img:hover {
+  filter: drop-shadow(4px 4px 4px #ddd8de);
 }
 body footer .section-inner .link-bar a:not(.first) {
   margin-left: 15px;
