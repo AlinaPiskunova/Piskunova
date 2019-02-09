@@ -1,0 +1,55 @@
+@import 'slick';
+@import 'slick-theme';
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,600');
+.slick-slider{
+  width: 90%;
+  margin: 100px auto;
+  position: relative;
+
+div {
+  margin-left: 20px;
+}
+  .slick-prev {
+    left: -87px;
+  }
+  .slick-prev::before{
+    content: url("../img/left.png");
+  }
+
+  .slick-next::before{
+    content: url("../img/right.png");
+  }
+  .slick-next {
+    right: 74px;
+  }
+
+}
+body{
+  margin: 0;
+  width: 1920px;
+  height: 984px;
+  background: #eba19d;
+
+  span, h1 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin: 10px auto;
+    width: 950px;
+    text-align: center;
+  }
+  span{
+    font-size: 18px;
+    font-weight: 600;
+   display: block;
+
+
+  }
+  h1{
+    font-size: 86px;
+    font-weight: 400;
+
+    line-height: 90px;
+  }
+}
+

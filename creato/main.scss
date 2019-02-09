@@ -1,0 +1,214 @@
+body {
+  background: #020407 url("img/Rectangle 3.png") top repeat-x;
+  background-size: contain;
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  .wrapper1170 {
+   max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    @media (max-width: 1024px) {flex-wrap: wrap;
+      max-width: 720px;}
+    @media (max-width: 640px) {flex-wrap: wrap;
+      max-width: 560px;
+    }
+  }
+  header {
+    margin-top: 100px;
+    @media (max-width: 640px) {
+      margin-top: 25px;
+    }
+    .wrapper1170 {
+      justify-content: space-between;
+      align-items: center;
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style: none;
+        @media (max-width: 640px) {flex-direction: column;
+
+        }
+        li {
+          a {
+            margin-left: 20px;
+            font-size: 14px;
+            color: white;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  .s1 {
+    margin-top: 220px;
+    @media (max-width: 640px) {
+      margin-top: 5px;
+    }
+
+    img{
+      @media (max-width: 640px) {width: 50%;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+    .wrapper1170 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      div {
+        width: 530px;
+        height: 544px;
+        color: white;
+
+        p {
+          margin: 42px 0;
+        }
+      }
+    }
+
+  }
+  .s2 {
+    margin-top: 200px;
+    @media (max-width: 1024px) {
+      margin-top: 100px;
+    }
+    @media (max-width: 640px) {
+      margin-top: 50px;
+    }
+    .rel {
+      position: relative;
+      width: 100%;
+      height: 470px;
+      background: #225fb8 url("img/blueblock.jpg");
+      padding: 1px;
+      @media (max-width: 768px) {
+        height: 70%;
+      }
+      img {
+        position: absolute;
+        left: 639px;
+        top: -142px;
+        @media (max-width: 1024px) {
+          left: 39px;
+          top: -392px;
+        }
+        @media (max-width: 640px) {
+          //margin-top: 50px;
+      }}
+      p {
+        display: block;
+        width: 500px;
+        margin: 160px 74px 56px 70px;
+        color: white;
+      }
+      a {
+        margin-left: 70px;
+      }
+    }
+
+  }
+  .s3 {
+    .wrapper1170 {
+
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      h2, p {
+        color: white;
+        width: 200px;
+        margin: 40px 0;
+      }
+
+    }
+  }
+  .s4 {
+    margin-top: 160px;
+    .wrapper1170 {
+
+      justify-content: flex-end;
+
+      ul {
+
+        display: flex;
+        flex-direction: row;
+
+        list-style: none;
+
+        li {
+          a {
+            margin-left: 20px;
+            font-size: 14px;
+            color: white;
+            text-transform: uppercase;
+          }
+
+        }
+      }
+    }
+
+  .grid-item,
+  .grid-sizer {
+    width: 30%;
+  }
+
+  .grid-item {
+    float: left;
+    height: 283px;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .grid-item.w-2 {
+    width: 40%;
+  }
+  .grid-item.h-2 {
+    height: 328px;
+  }
+  .grid-item.h-2.margin {
+    margin-top: -44px;
+  }
+  }
+  .s5{
+    margin-top: 200px;
+    .rel {
+      position: relative;
+      width: 100%;
+      height: 470px;
+      background: #ef4836;
+      padding: 1px;
+      img {
+        position: absolute;
+        left: 39px;
+        top: -49.7px;
+      }
+      p {
+        display: block;
+        width: 500px;
+        margin: 134px 54px 41px 570px;
+        color: white;
+      }
+      span {
+        margin-left: 570px;
+        color: white;
+      }
+      span::after{
+        content: '>';
+        position: absolute;
+        left: 1087.4px;
+        top: 402px;
+      }
+      span::before{
+        content: '<';
+        position: absolute;
+        left: 1064.4px;
+        top: 402px;
+      }
+    }
+  }
+}

@@ -1,0 +1,170 @@
+@import 'bootstrap/bootstrap-reboot';
+@import 'bootstrap/bootstrap';
+@import 'bootstrap/bootstrap-grid';
+
+body {
+  background: #d6e6ef url("../img/bg.png");
+  background-size: cover;
+  .pos-absolute {
+    position: absolute;
+  }
+  .pos-relative {
+    position: relative;
+  }
+  .section-inner {
+    width: 1024px;
+    margin: 0 auto;
+  }
+  .flex{
+    display: flex;
+  }
+  header {
+    .section-inner {
+      .navbar.navbar-expand-lg {
+        background: url("../img/topmenu_bg.png") top no-repeat;
+        background-size: contain;
+        align-items: baseline;
+        a {
+          margin-left: 30px;
+          color: white
+        }
+        .my-style {
+          color: #000099;
+          width: 250px;
+          height: 150px;
+          background: #e1ecf2;
+          border: 8px solid white;
+          border-radius: 10px;
+          margin-top: -51px;
+          transform: rotate(-15deg);
+          padding: 30px 10px;
+          text-align: center;
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .s1 {
+    margin-top: -17px;
+    .section-inner {
+      //vertical-align: top;
+      .fly-propose.pos-relative {
+        width: 652px;
+        height: 314px;
+        background: url("../img/cloud.png") no-repeat center right;
+        background-size: 90%;
+        padding: 1px;
+        display: inline-block;
+        margin-top: 100px;
+        z-index: 2;
+        img.pos-absolute {
+          top: 39px;
+          left: 6px;
+        }
+        #carouselExampleControls {
+          width: 314px;
+          overflow: hidden;
+          height: 280px;
+          margin: 108px 0 0 271px;
+          .carousel-control-prev {
+            top: 32px;
+            left: 82.4px;
+          }
+          .carousel-control-next {
+            top: 47px;
+            left: 181.4px;
+          }
+          .country {
+            width: 314px;
+            height: 128px;
+            text-align: center;
+          }
+        }
+      }
+    }
+    form {
+      z-index: 2;
+      height: 550px;
+      width: 350px;
+      display: inline-block;
+      vertical-align: top;
+      background: #299fca url("../img/ladder.png") no-repeat 12% 100%;
+      box-sizing: border-box;
+      border: 8px solid #7ebee0;
+      border-radius: 14px;
+      padding: 100px 30px;
+      color: white;
+      margin-left: 12px;
+      &:before {
+        content: url("../img/Online Booking.png");
+        position: absolute;
+        top: 26px;
+        right: 126px;
+      }
+      .disp-flex {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 18px;
+      }
+      input, select {
+        width: 160px;
+      }
+      .btn-primary {
+        background-color: #eee30c;
+        border-color: #eee30c;
+        border-radius: 14px;
+        width: 120px;
+        height: 33px;
+        line-height: 1;
+        margin-left: 150px;
+        color: #299fca;
+      }
+      .my-border {
+
+        border: 4px solid #7ebee0;
+        border-radius: 8px;
+      }
+    }
+  }
+  .clouds {
+    height: 350px;
+    background: #127ea5;
+    .relative {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      .decoration {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: 100% auto;
+        &:nth-child(1) {
+          background-image: url("../img/cloud 1_1.png");
+          right: 0;
+          bottom: 110px;
+          z-index: 3;
+        }
+        &:nth-child(2) {
+          background-image: url("../img/cloud 2.png") ;
+          right: 0;
+          bottom: 238px;
+          z-index: 1;
+        }
+      }
+    }
+  }
+  .s3{
+.section-inner{
+  .special, .tabs-summer{
+    display: inline-block;
+    width: 500px;
+    top:-220px;
+    z-index: 4;
+  }
+}
+  }
+}
+
+

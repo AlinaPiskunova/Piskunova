@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Sans+Pro:300');
+@import 'slick';
+@import 'slick-theme';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 0.2em;
+    margin: 0 0 50px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 25px;
+    margin: 0;
+    color: #525252;
+  }
+  .s1 {
+    background: #a9b5c8 url("img/headerback.jpg") no-repeat center;
+    background-size: cover;
+    .wrapper1170 {
+      //padding-top: 167px;
+      height: 100vh;
+      min-height: 740px;
+      max-width: 1170px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      header {
+        margin-top: 50px;
+        justify-content: space-between;
+        align-items: baseline;
+        display: flex;
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          list-style: none;
+          @media (max-width: 640px) {
+            flex-direction: column;
+
+          }
+          li {
+            a {
+              //margin-left: 10px;
+              font-size: 14px;
+              color: white;
+              text-transform: capitalize;
+              text-decoration: none;
+              text-align: center;
+              padding-top: 7px;
+              display: block;
+              height: 33px;
+              width: 80px;
+              &:hover {
+                border: 1px solid white;
+                border-radius: 40px;
+                margin: -1px;
+              }
+            }
+          }
+        }
+      }
+      .presentation {
+        margin-top: 170px;
+        align-self: center;
+        text-align: center;
+        color: white;
+        h1 {
+          font-family: 'Source Sans Pro', sans-serif;
+          font-weight: 300;
+          font-size: 35px;
+          text-transform: capitalize;
+          letter-spacing: 0.2em;
+          margin: 0 0 50px;
+        }
+        p {
+          margin: 0 0 220px;
+          line-height: 28px;
+          color: white;
+        }
+      }
+    }
+  }
+  .s2 {
+    text-align: center;
+    padding-top: 90px;
+    color: #333b46;
+
+    .linkbar {
+      width: 368px;
+      margin: 80px auto 52px;
+      display: flex;
+      justify-content: space-between;
+      a {
+        display: block;
+        height: 33px;
+        width: 80px;
+        text-decoration: none;
+        color: #525252;
+        &:hover {
+          border-bottom: 3px solid #19bd9a;
+          position: relative;
+          &:before, &:after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            background: #fff;
+            width: 21%;
+            height: 50%;
+          }
+          &:before {
+            left: -1px;
+            top: 69%;
+          }
+          &:after {
+            left: 59px;
+            top: 69%;
+          }
+        }
+
+      }
+    }
+    .grid {
+      max-width: 1112px;
+      margin: 0 auto;
+    }
+    .grid-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  .b-popup {
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    .b-popup-content {
+      margin: 40px auto 0 auto;
+      width: 600px;
+      height: 600px;
+      padding: 10px;
+      background-color: rgba(37, 40, 48, 0.8);
+      position: relative;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      a {
+        position: absolute;
+        color: black;
+        text-decoration: none;
+        top: 9px;
+        right: 19px;
+      }
+      img {
+        margin: 0 auto;
+        width: 70%;
+        height: auto;
+      }
+    }
+
+  }
+  .s3 {
+    background: #333333;
+    text-align: center;
+    margin-top: 80px;
+    .slick-slider {
+      margin: 0 auto;
+      width: 1030px;
+    }
+
+    .team {
+      width: 1030px;
+      margin: 67px auto;
+      img {
+        float: left;
+      }
+      h3, h4, p {
+        float: right;
+        width: 380px;
+        text-align: right;
+        padding-right: 47px;
+      }
+      h3, h4 {
+        border-right: 3px solid #19bd9a;
+        margin: 0;
+      }
+      &.clearfix:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+    }
+  }
+}
