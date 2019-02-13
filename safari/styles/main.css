@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy|Lato:400,900i");
 *,
 *::before,
 *::after {
@@ -13888,8 +13889,17 @@ html {
   }
 }
 body {
-  background: #d6e6ef url("../img/bg.png");
+  background: #127ea5 url("../img/bg.png");
   background-size: cover;
+  font-family: "Lato", serif;
+}
+body h2 {
+  font-family: "Luckiest Guy", cursive;
+}
+body h3 {
+  font-family: "Lato", serif;
+  font-style: italic;
+  font-weight: bold;
 }
 body .pos-absolute {
   position: absolute;
@@ -13914,7 +13924,7 @@ body header .section-inner .navbar.navbar-expand-lg a {
   color: white;
 }
 body header .section-inner .navbar.navbar-expand-lg .my-style {
-  color: #000099;
+  color: #299fca;
   width: 250px;
   height: 150px;
   background: #e1ecf2;
@@ -13964,6 +13974,16 @@ body .s1 .section-inner .fly-propose.pos-relative #carouselExampleControls .coun
   height: 128px;
   text-align: center;
 }
+body .s1 .section-inner .fly-propose.pos-relative #carouselExampleControls .country h2 {
+  color: #127ea5;
+}
+body .s1 .section-inner .fly-propose.pos-relative #carouselExampleControls .country p {
+  font-family: "Lato", serif;
+  color: #ded90e;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 18px;
+}
 body .s1 form {
   z-index: 2;
   height: 550px;
@@ -14002,6 +14022,11 @@ body .s1 form .btn-primary {
   margin-left: 150px;
   color: #299fca;
 }
+body .s1 form .btn-primary:hover {
+  transform: scale(1.08);
+  transition: 0.1s 0.1s ease-in;
+  transition-property: transform;
+}
 body .s1 form .my-border {
   border: 4px solid #7ebee0;
   border-radius: 8px;
@@ -14034,10 +14059,196 @@ body .clouds .relative .decoration:nth-child(2) {
   z-index: 1;
 }
 body .s3 .section-inner .special, body .s3 .section-inner .tabs-summer {
-  display: inline-block;
   width: 500px;
-  top: -220px;
+  top: -294px;
   z-index: 4;
+}
+body .s3 .section-inner .special h2 {
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+  font-style: italic;
+}
+body .s3 .section-inner .special .my-card {
+  color: white;
+  max-width: 458px;
+  height: 120px;
+}
+body .s3 .section-inner .special .my-card:nth-child(2) {
+  border-bottom: dotted #cccccc;
+}
+body .s3 .section-inner .special .my-card .media {
+  width: 458px;
+}
+body .s3 .section-inner .special .my-card .btn.btn-primary {
+  background-color: #eee30c;
+  border-color: #eee30c;
+  border-radius: 14px;
+  width: 120px;
+  height: 33px;
+  line-height: 1;
+  margin-left: 240px;
+  color: #299fca;
+}
+body .s3 .section-inner .special .my-card .btn.btn-primary:hover {
+  transform: scale(1.08);
+  transition: 0.1s 0.1s ease-in;
+  transition-property: transform;
+}
+body .s3 .section-inner .tabs-summer {
+  left: 57%;
+}
+body .s3 .section-inner .tabs-summer .special {
+  width: 176px;
+  height: auto;
+  top: -24%;
+  left: 65%;
+}
+body .s3 .section-inner .tabs-summer ul.nav.nav-tabs {
+  border-bottom: 1px solid #81ffff;
+}
+body .s3 .section-inner .tabs-summer ul.nav.nav-tabs a.nav-link {
+  width: 117px;
+  margin-left: 12px;
+  text-align: center;
+  height: 30px;
+  background: #299fca;
+  color: #81ffff;
+  line-height: 1.7;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #81ffff;
+}
+body .s3 .section-inner .tabs-summer ul.nav.nav-tabs a.nav-link.active {
+  background: #81ffff;
+  color: #299fca;
+}
+body .s3 .section-inner .tabs-summer div.tab-content a.row {
+  text-decoration: none;
+  text-transform: uppercace;
+  color: white;
+  font-size: 16px;
+}
+body .s3 .section-inner .tabs-summer div.tab-content a.row:hover {
+  color: #b7deed;
+}
+body .s3 .section-inner .tabs-summer div.tab-content div.container img {
+  width: 150px;
+  height: auto;
+  margin-top: 6px;
+}
+body .s3 .section-inner .tabs-summer div.tab-content div.container img:hover {
+  transform: scale(1.08);
+  transition: 0.2s 0.2s linear;
+  transition-property: transform;
+}
+body .s4 .tours {
+  width: 400px;
+  opacity: 1;
+}
+body .s4 .tours a {
+  text-decoration: none;
+  text-transform: uppercace;
+  color: #127ea5;
+  font-size: 16px;
+  display: block;
+  margin-top: 6px;
+}
+body .s4 .tours a:hover {
+  background: rgba(46, 156, 221, 0.2);
+  transition: 0.7s;
+}
+body .s4 .tours a img {
+  width: 100px;
+}
+body .s4 #map {
+  height: 500px;
+  opacity: 0.8;
+  background-color: #127ea5;
+}
+body .s4 .head {
+  margin-top: 10px;
+  top: 0;
+  left: 35%;
+  color: #127ea5;
+}
+body .s4 .head h2 {
+  font-size: 32px;
+}
+body .s4 .head h3 {
+  font-size: 20px;
+  text-align: center;
+}
+body .s5 {
+  padding-top: 24px;
+  background: #127ea5;
+}
+body .s5 .section-inner {
+  display: flex;
+  justify-content: space-between;
+}
+body .s5 .section-inner .btn-blue {
+  width: 90px;
+  height: 32px;
+  border-radius: 3px;
+  background: #d6e6ef;
+  color: #1380a7;
+  border: 1px solid #d6e6ef;
+}
+body .s5 .section-inner h3 {
+  font-size: 25px;
+  color: #ffffff;
+  margin-bottom: 18px;
+}
+body .s5 .section-inner .flex-inner:nth-child(1) input {
+  display: block;
+  border: 2px solid #0f6686;
+  background: #0f6686;
+  height: 32px;
+  width: 193px;
+  margin-bottom: 13px;
+  border-radius: 7px;
+}
+body .s5 .section-inner .flex-inner:nth-child(1) .btn-blue {
+  margin-left: 10px;
+}
+body .s5 .section-inner .flex-inner:nth-child(1) a {
+  display: inline-block;
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  background: #3bb3de;
+  border-radius: 20px;
+  line-height: 2.5;
+  text-align: center;
+}
+body .s5 .section-inner .flex-inner:nth-child(1) a i {
+  font-size: 20px;
+  color: #9ad7ee;
+}
+body .s5 .section-inner .flex-inner:nth-child(2) p {
+  font-size: 14px;
+  color: #ffffff;
+}
+body .s5 .section-inner .flex-inner:nth-child(3) input, body .s5 .section-inner .flex-inner:nth-child(3) textarea {
+  display: block;
+  border: 2px solid #0f6686;
+  background: #0f6686;
+  border-radius: 7px;
+}
+body .s5 .section-inner .flex-inner:nth-child(3) input {
+  height: 32px;
+  width: 193px;
+  margin-bottom: 13px;
+}
+body .s5 .section-inner .flex-inner:nth-child(3) .btn-blue {
+  margin-top: 10px;
+}
+body footer {
+  padding-top: 20px;
+  background-color: #127ea5;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=main.css.map */
