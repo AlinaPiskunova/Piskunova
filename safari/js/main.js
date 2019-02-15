@@ -7,6 +7,8 @@
             $(this).toggleClass('menu-opened');
         });
 
+
+
         var w = $(window),
             b1 = $('.decoration:nth-child(1)'),
             b2 = $('.decoration:nth-child(2)'),

@@ -13976,6 +13976,7 @@ body header .section-inner .nav-bar ul.visible {
   display: block;
   background: #299fca;
   border-radius: 25px;
+  z-index: 4;
 }
 @media (max-width: 1040px) {
   body header .section-inner .nav-bar ul {
@@ -14038,6 +14039,11 @@ body header .section-inner .nav-bar .hamburger:after {
 body .s1 {
   margin-top: -17px;
 }
+@media (max-width: 2560px) {
+  body .s1 {
+    justify-content: space-around;
+  }
+}
 @media (max-width: 1280px) {
   body .s1 {
     margin-top: 10px;
@@ -14054,11 +14060,6 @@ body .s1 .section-inner {
 @media (max-width: 1040px) {
   body .s1 .section-inner {
     width: 100%;
-  }
-}
-@media (max-width: 2560px) {
-  body .s1 .section-inner {
-    justify-content: space-around;
   }
 }
 @media (max-width: 768px) {
@@ -14257,7 +14258,6 @@ body .s3 .section-inner {
 @media (max-width: 1280px) {
   body .s3 .section-inner {
     width: 98%;
-    top: -594px;
     left: 1%;
     flex-wrap: wrap;
   }
@@ -14265,7 +14265,7 @@ body .s3 .section-inner {
 @media (max-width: 1034px) {
   body .s3 .section-inner {
     width: 700px;
-    top: -650px;
+    top: -593px;
     justify-content: center;
     flex-wrap: wrap;
     left: 0;
