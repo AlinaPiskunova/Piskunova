@@ -14180,7 +14180,7 @@ body .s4 .head h3 {
   text-align: center;
 }
 body .s6 {
-  background: #7ebee0;
+  padding: 30px;
   background: #7ebee0 url(../img/earth.png) no-repeat center;
   background-size: 60%;
 }
@@ -14251,17 +14251,6 @@ body .s6 .third-col {
   width: 33.3333%;
   font-size: 18px;
   display: inline-block;
-}
-body .s6 .our-services__subtitle {
-  font-style: italic;
-}
-body .s6 .our-services__third-col {
-  vertical-align: top;
-  text-align: center;
-}
-body .s6 .our-services__dscr {
-  font-style: italic;
-  font-size: 18px;
 }
 body .s5 {
   padding-top: 24px;

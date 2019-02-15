@@ -311,11 +311,11 @@ body {
     }
   }
   .s6 {
-    h2{
+    padding: 30px;
+    h2 {
       text-align: center;
       color: #ded90e;
     }
-    background: #7ebee0;
     background: #7ebee0 url(../img/earth.png) no-repeat center;
     background-size: 60%;
     .reviews {
@@ -392,17 +392,7 @@ body {
       display: inline-block;
 
     }
-    .our-services__subtitle {
-      font-style: italic;
-    }
-    .our-services__third-col {
-      vertical-align: top;
-      text-align: center;
-    }
-    .our-services__dscr {
-      font-style: italic;
-      font-size: 18px;
-    }
+
   }
   .s5 {
     padding-top: 24px;
