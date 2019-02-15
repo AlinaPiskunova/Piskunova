@@ -12,33 +12,30 @@
 <body>
 <header>
     <div class="section-inner" id="to-top">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="nav-bar">
             <a class="navbar-brand " href="#">
                 <div class="my-style"><h2>Safari Tour</h2>
                     <span>International Tour packages</span>
                 </div>
             </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Flight</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Trains</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Reach Us</a>
-                    </li>
-                </ul>
-            </div>
+            <a href="javascript:void(0);" class="hamburger"></a>
+            <ul>
+                <li>
+                    <a href="javascript:void(0);">Home</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">Packages</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">Flights</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">Trains</a>
+                </li>
+                <li>
+                    <a href="#Reach-us" class="scroll">Reach us</a>
+                </li>
+            </ul>
         </nav>
     </div>
 </header>
@@ -104,8 +101,8 @@
 
     </section>
     <section class="s3 pos-relative">
-        <div class="section-inner">
-            <div class="special pos-absolute">
+        <div class="section-inner pos-absolute">
+            <div class="special ">
                 <h2>our special offers</h2>
                 <div class="my-card">
                     <div class="media">
@@ -129,8 +126,8 @@
                     </div>
                 </div>
             </div>
-            <div class="tabs-summer pos-absolute">
-                <img src="img/Offer.png" alt="special offer" class="special pos-absolute">
+            <div class="tabs-summer pos-relative">
+                <img src="img/Offer.png" alt="special offer" class="offer pos-absolute">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
@@ -147,52 +144,52 @@
                     <div class="tab-pane fade show active container" id="home" role="tabpanel"
                          aria-labelledby="home-tab">
                         <a href="javascript:void(0);" class="row">
-                            <span class="col-sm-6">West Coast Tours</span>
+                            <span class="col-sm-4">West Coast Tours</span>
                             <span class="col-sm">10 days</span>
                             <span class="col-sm">more credits</span>
                         </a>
                         <a href="javascript:void(0);" class="row">
-                            <span class="col-sm-6">East Coast Tours</span>
+                            <span class="col-sm-4">East Coast Tours</span>
                             <span class="col-sm">10 days</span>
                             <span class="col-sm">more credits</span>
                         </a>
                         <a href="javascript:void(0);" class="row">
-                            <span class="col-sm-6">Niagara Falls Tours</span>
+                            <span class="col-sm-4">Niagara Falls Tours</span>
                             <span class="col-sm">10 days</span>
                             <span class="col-sm">more credits</span>
                         </a>
                         <a href="javascript:void(0);" class="row">
-                            <span class="col-sm-6">Yellowstone Tours</span>
+                            <span class="col-sm-4">Yellowstone Tours</span>
                             <span class="col-sm">10 days</span>
                             <span class="col-sm">more credits</span>
                         </a>
                         <a href="javascript:void(0);" class="row">
-                            <span class="col-sm-6">Asia Tours</span>
+                            <span class="col-sm-4">Asia Tours</span>
                             <span class="col-sm">10 days</span>
                             <span class="col-sm">more credits</span>
                         </a>
                         <a href="javascript:void(0);" class="row">
-                            <span class="col-sm-6">Latin American Tours</span>
+                            <span class="col-sm-4">Latin American Tours</span>
                             <span class="col-sm">10 days</span>
                             <span class="col-sm">more credits</span>
                         </a>
                         <a href="javascript:void(0);" class="row">
-                            <span class="col-sm-6">Middle East Tours</span>
+                            <span class="col-sm-4">Middle East Tours</span>
                             <span class="col-sm">10 days</span>
                             <span class="col-sm">more credits</span>
                         </a>
                         <a href="javascript:void(0);" class="row">
-                            <span class="col-sm-6">Africa Tours</span>
+                            <span class="col-sm-4">Africa Tours</span>
                             <span class="col-sm">10 days</span>
                             <span class="col-sm">more credits</span>
                         </a>
                         <a href="javascript:void(0);" class="row">
-                            <span class="col-sm-6">San Francisco Tours</span>
+                            <span class="col-sm-4">San Francisco Tours</span>
                             <span class="col-sm">10 days</span>
                             <span class="col-sm">more credits</span>
                         </a>
                         <a href="javascript:void(0);" class="row">
-                            <span class="col-sm-6">Canadian Rockies Tours</span>
+                            <span class="col-sm-4">Canadian Rockies</span>
                             <span class="col-sm">10 days</span>
                             <span class="col-sm">more credits</span>
                         </a>
@@ -400,7 +397,7 @@
                     </div>
                 </form>
             </div>
-            <div class="flex-inner">
+            <div class="flex-inner" id="Reach-us">
                 <h3>Contact us</h3>
                 <p> Lorem Ipsum is simply dummy
                     <br>
@@ -435,7 +432,7 @@
     <i class="fas fa-copyright"></i>
     Copyright 2013 cssauthor.com, All Rights Reserved Designed and Developed By cssauthor.com
 </footer>
-<a href="#to-top" class="js-back-to-top back-to-top"></a>
+<a href="#to-top" class="back-to-top scroll"></a>
 <script src="js/jquery-3.3.1.js" defer></script>
 
 <script src="js/popper.min.js" defer></script>

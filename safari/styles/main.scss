@@ -18,14 +18,17 @@
     transition-property: transform;
   }
 }
-
 @mixin link($trans, $color, $f-z) {
   text-decoration: none;
   text-transform: $trans;
   color: $color;
   font-size: $f-z;
+  &:hover {
+    transform: scale(1.08);
+    transition: 0.1s 0.1s ease-in;
+    transition-property: transform;
+  }
 }
-
 body {
   background: #127ea5 url("../img/bg.png");
   background-size: cover;
@@ -45,21 +48,30 @@ body {
     position: relative;
   }
   .section-inner {
-    width: 1024px;
+    width: 80%;
     margin: 0 auto;
+
   }
   .flex {
     display: flex;
   }
   header {
     .section-inner {
-      .navbar.navbar-expand-lg {
+      .nav-bar {
         background: url("../img/topmenu_bg.png") top no-repeat;
         background-size: contain;
         align-items: baseline;
+        display: flex;
+        justify-content: space-around;
+        @media (max-width: 1040px) {
+          background: #4cb2e7;
+          border-radius: 20px;
+          border: 7px solid #7ebee0;
+          height: 70px;
+        }
         a {
           margin-left: 30px;
-          color: white
+          color: white;
         }
         .my-style {
           color: #299fca;
@@ -68,13 +80,93 @@ body {
           background: #e1ecf2;
           border: 8px solid white;
           border-radius: 10px;
-          margin-top: -51px;
+          margin-top: -39px;
           transform: rotate(-15deg);
           padding: 30px 10px;
           text-align: center;
+          &:hover {
+            transform: rotate(15deg);
+            transition: 0.2s 0.2s ease-in;
+            transition-property: transform;
+          }
+          @media (max-width: 1040px) {
+            width: 216px;
+            height: 97px;
+            padding: 0;
+            margin-top: -10px;
+            transform: rotate(-8deg);
+            text-align: center;
+            &:hover {
+              transform: rotate(8deg);
+              transition: 0.2s 0.2s ease-in;
+              transition-property: transform;
+            }
+          }
 
           span {
             font-size: 14px;
+          }
+        }
+        ul {
+          margin: 0;
+          padding: 0;
+          &.visible {
+            display: block;
+            background: #299fca;
+            border-radius: 25px;
+          }
+          @media (max-width: 1040px) {
+            display: none;
+          }
+          li {
+            display: inline-block;
+            margin-right: 20px;
+            @media (max-width: 1040px) {
+              display: block;
+            }
+          }
+          a:hover {
+            color: #eee30c;
+            text-decoration: none;
+          }
+        }
+        .hamburger {
+          height: 4px;
+          width: 18px;
+          background: #eee30c;
+          display: none;
+          float: right;
+          position: relative;
+          margin-top: 8px;
+          &.menu-opened {
+            background: none;
+            &:before {
+              transform: rotate(45deg);
+              top: 0;
+            }
+            &:after {
+              transform: rotate(-45deg);
+              bottom: 0;
+
+            }
+          }
+          @media (max-width: 1040px) {
+            display: block;
+          }
+          &:before, &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            height: 4px;
+            width: 18px;
+            background: #eee30c;
+            left: 0;
+          }
+          &:before {
+            top: -8px;
+          }
+          &:after {
+            bottom: -8px;
           }
         }
       }
@@ -82,8 +174,33 @@ body {
   }
   .s1 {
     margin-top: -17px;
+    @media (max-width: 1280px) {
+      margin-top: 10px;
+    }
+    @media (max-width: 920px) {
+      margin-top: -30px;
+    }
     .section-inner {
-      //vertical-align: top;
+      display: flex;
+      @media (max-width: 1040px) {
+        width: 100%;
+      }
+
+      @media (max-width: 920px) {
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+      }
+      @media (max-width: 2560px){
+        justify-content: space-around;
+      }
+      @media (max-width: 768px) {
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+      }
       .fly-propose.pos-relative {
         width: 652px;
         height: 314px;
@@ -105,15 +222,34 @@ body {
           .carousel-control-prev {
             top: 32px;
             left: 82.4px;
+            @media (max-width: 1280px) {
+              top: -31px;
+              left: 7.4px;
+              img {
+                width: 30px;
+              }
+            }
           }
           .carousel-control-next {
             top: 47px;
             left: 181.4px;
+            @media (max-width: 1280px) {
+              top: -55px;
+              left: 200.4px;
+              img {
+                width: 30px;
+              }
+            }
+
           }
           .country {
             width: 314px;
             height: 128px;
             text-align: center;
+            @media (max-width: 1280px) {
+              width: 260px;
+
+            }
             h2 {
               color: #127ea5;
             }
@@ -141,11 +277,17 @@ body {
       padding: 100px 30px;
       color: white;
       margin-left: 12px;
+      @media (max-width: 1280px) {
+        width: 300px;
+      }
       &:before {
         content: url("../img/Online Booking.png");
         position: absolute;
         top: 26px;
         right: 126px;
+        @media (max-width: 1280px) {
+          left: -30px;
+        }
       }
       .disp-flex {
         display: flex;
@@ -156,8 +298,10 @@ body {
         width: 160px;
       }
       .btn-primary {
-        @include btn(150px)
-
+        @include btn(150px);
+        @media (max-width: 1280px) {
+          @include btn(100px)
+        }
       }
       .my-border {
 
@@ -167,8 +311,15 @@ body {
     }
   }
   .clouds {
-    height: 350px;
+
+    height: 460px;
     background: #127ea5;
+    @media (max-width: 1020px) {
+      height: 700px;
+    }
+    @media (max-width: 768px) {
+      height: 700px;
+    }
     .relative {
       width: 100%;
       height: 100%;
@@ -180,14 +331,18 @@ body {
         background-size: 100% auto;
         &:nth-child(1) {
           background-image: url("../img/cloud 1_1.png");
+          background-size: cover;
           right: 0;
-          bottom: 110px;
+          top: -63px;
           z-index: 3;
+          @media (max-width: 920px) {
+            top: 20px;
+          }
         }
         &:nth-child(2) {
           background-image: url("../img/cloud 2.png");
           right: 0;
-          bottom: 238px;
+          top: -238px;
           z-index: 1;
         }
       }
@@ -195,11 +350,25 @@ body {
   }
   .s3 {
     .section-inner {
+      top: -327px;
+      left: 10%;
+      z-index: 4;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
 
+      @media (max-width: 1280px) {
+        width: 98%;
+        top: -350px;
+        left: 1%;
+        @media (max-width: 920px) and (max-width: 768px) {
+          top: -650px;
+          left: 20%;
+        }
+             }
       .special, .tabs-summer {
         width: 500px;
-        top: -294px;
-        z-index: 4;
+
       }
       .special {
         h2 {
@@ -207,6 +376,7 @@ body {
           font-size: 20px;
           text-transform: capitalize;
           font-style: italic;
+          flex-grow: 2;
         }
         .my-card {
           color: white;
@@ -224,12 +394,14 @@ body {
         }
       }
       .tabs-summer {
-        left: 57%;
-        .special {
+        .offer {
           width: 176px;
           height: auto;
-          top: -24%;
+          top: -65px;
           left: 65%;
+          @media (max-width: 920px){
+            display: none;
+          }
         }
         ul.nav.nav-tabs {
           border-bottom: 1px solid #81ffff;
@@ -317,7 +489,7 @@ body {
       color: #ded90e;
     }
     background: #7ebee0 url(../img/earth.png) no-repeat center;
-    background-size: 60%;
+    background-size: 53%;
     .reviews {
       padding: 50px 0;
       display: flex;
@@ -334,6 +506,10 @@ body {
       perspective: 800px;
       transform-style: preserve-3d;
       position: relative;
+      @media (max-width: 920px) {
+        width: 200px;
+        height: 200px;
+      }
       &:hover {
         .front {
           transform: rotateY(-180deg);
@@ -475,16 +651,24 @@ body {
     text-align: center;
     color: #FFFFFF;
   }
-  .back-to-top {
+  .scroll.back-to-top {
     position: fixed;
     right: 10px;
     bottom: 10px;
-    display: inline-block;
+    display: none;
     z-index: 5;
     width: 45px;
     height: 61px;
     background: url(../img/air_balloon_PNG19382.png) no-repeat center;
     background-size: 42px;
+    opacity: 0.5;
+    &.visible {
+      display: inline-block;
+    }
+    &:hover {
+      opacity: 1;
+    }
+
   }
 }
 
