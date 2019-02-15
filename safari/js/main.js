@@ -7,6 +7,9 @@
             img = $('.plane:first-of-type'),
             b1b = b1.position().top,
             b2b = b2.position().top;
+        setTimeout(function () {
+            w.scrollTop(0);
+        }, 300);
         // console.log(img);
         // imgPos = img.position.right;
         //  console.log(imgPos);
@@ -15,11 +18,31 @@
             b1.css('top', b1b - scrollTop / 3 + 'px');
             b2.css('top', b2b - scrollTop / 5 + 'px');
         });
-        img.on('click', function () {
-            $(this).animate({
+
+        function fly() {
+            img.animate({
                 left: '-588px',
                 top: '-120px'
             }, 2000);
+        }
+
+        img.on('click', function () {
+            fly();
+        });
+        $('.pos-relative').on('submit', function (e) {
+            e.preventDefault();
+            fly();
+        });
+
+        $('.lightzoom').lightzoom({speed: 400, isOverlayClickClosing: true});
+        $("a.back-to-top").click(function () {
+            $("html, body").animate({
+                scrollTop: $($(this).attr("href")).offset().top + "px"
+            }, {
+                duration: 500,
+                easing: "swing"
+            });
+            return false;
         });
     });
 })(jQuery);

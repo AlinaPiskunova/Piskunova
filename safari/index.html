@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img/favicon-32x32.png">
 </head>
 <body>
 <header>
-    <div class="section-inner">
-        <nav class="navbar navbar-expand-lg ">
+    <div class="section-inner" id="to-top">
+        <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand " href="#">
                 <div class="my-style"><h2>Safari Tour</h2>
                     <span>International Tour packages</span>
@@ -197,28 +198,27 @@
                         </a>
                     </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-
                         <div class="container">
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img src="img/1.jpg" alt="">
+                                   <a class="lightzoom" href="img/1.jpg"> <img  src="img/1.jpg" alt=""></a>
                                 </div>
                                 <div class="col-sm-4">
-                                    <img src="img/2.jpg" alt="">
+                                   <a class="lightzoom" href="img/2.jpg"> <img src="img/2.jpg" alt=""></a>
                                 </div>
                                 <div class="col-sm-4">
-                                    <img src="img/3.jpg" alt="">
+                                    <a class="lightzoom" href="img/3.jpg" ><img src="img/3.jpg" alt=""></a>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <img src="img/4.jpg" alt="">
+                                   <a class="lightzoom" href="img/4.jpg"> <img src="img/4.jpg" alt=""></a>
                                 </div>
                                 <div class="col-sm-4">
-                                    <img src="img/5.jpg" alt="">
+                                    <a class="lightzoom" href="img/5.jpg"><img src="img/5.jpg" alt=""></a>
                                 </div>
                                 <div class="col-sm-4">
-                                    <img src="img/6.jpg" alt="">
+                                    <a class="lightzoom" href="img/6.jpg"><img src="img/6.jpg" alt=""></a>
                                 </div>
                             </div>
                         </div>
@@ -232,7 +232,7 @@
     <section class="s4 pos-relative">
         <div id="map">
 
-            <!--.info-freeUA>h1>{Free UA}^p>{Beetrot office}-->
+           
             <div class="tours europe">
                 <a href="javascript:void(0);">
                     <img src="img/3.jpg" alt="Rome">
@@ -293,6 +293,68 @@
             <h3>Click on mark</h3>
         </div>
     </section>
+    <section class="s6">
+      <div class="section-inner">
+          <h2>
+              customer reviews</h2>
+          <div class="row reviews">
+            <div class="row-cont">
+                <div class="first-col">
+                    <div class="wrapper3d">
+                        <div class="front">
+
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, veritatis!
+                        </div>
+                        <div class="our-services__design-dscr back">
+                            <img src="img/volochkova.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="wrapper3d">
+                        <div class="front bg-light">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, veritatis!
+                        </div>
+                        <div class="our-services__design-dscr back"> <img src="img/1502470121_kartinki-1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="second-col">
+                    <div class="wrapper3d">
+                        <div class="front bg-light">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        </div>
+                        <div class="our-services__design-dscr back"><img src="img/tn.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="wrapper3d">
+                        <div class="front">
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur distinctio non quam tenetur ullam!
+                        </div>
+                        <div class="our-services__design-dscr back"><img src="img/lgq03nnrpy9n-borat-sagdiev-v-kupalnike.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="third-col">
+
+                    <div class="wrapper3d">
+                        <div class="front">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio laboriosam neque nihil totam.
+                        </div>
+                        <div class="our-services__design-dscr back"><img src="img/tn.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="wrapper3d">
+                        <div class="front bg-light">
+                           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta et illo ipsum laudantium necessitatibus possimus sed.
+                        </div>
+                        <div class="our-services__design-dscr back"><img src="img/tn.jpg" alt="">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
     <section class="s5">
         <div class="section-inner">
             <div class="flex-inner">
@@ -338,31 +400,32 @@
                 <h3>Contact form</h3>
                 <form action="/">
 
-                        <input type="text" name="last-name" maxlength="2" minlength="2" required="" placeholder="your name:">
-
-
-
-                        <input type="text" name="last-name" maxlength="2" minlength="2" required="" placeholder="your phone:">
-
-                    <input  type="email" name="email" placeholder="e-mail">
-
-
+                    <input type="text" name="last-name" maxlength="2" minlength="2" required=""
+                           placeholder="your name:">
+                    <input type="text" name="last-name" maxlength="2" minlength="2" required=""
+                           placeholder="your phone:">
+                    <input type="email" name="email" placeholder="e-mail">
                     <textarea class="my-border" name="Message" cols="24" rows="4" placeholder="Massage:"></textarea>
-
                     <button type="submit" class="btn-blue">Submit</button>
                 </form>
             </div>
         </div>
     </section>
 </main>
-<footer> <i class="fas fa-copyright"></i> Copyright 2013 cssauthor.com, All Rights Reserved      Designed and Developed By cssauthor.com</footer>
+<footer>
+    <i class="fas fa-copyright"></i>
+    Copyright 2013 cssauthor.com, All Rights Reserved Designed and Developed By cssauthor.com
+</footer>
+<a href="#to-top" class="js-back-to-top back-to-top"></a>
 <script src="js/jquery-3.3.1.js" defer></script>
+
 <script src="js/popper.min.js" defer></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"
         defer></script>
-<!--<script src="js/bootstrap/index.js" defer></script>-->
 <script src="js/main.js" defer></script>
+<script src="lightzoom.js" defer></script>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB8Pqp5jIVZ90oUj6P6zZmx7JrsLEmjayY&callback=initMap"
         defer></script>
 </body>

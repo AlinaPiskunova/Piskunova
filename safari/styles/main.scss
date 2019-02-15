@@ -2,6 +2,7 @@
 @import 'bootstrap/bootstrap';
 @import 'bootstrap/bootstrap-grid';
 @import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Lato:400,900i');
+
 @mixin btn($margin) {
   background-color: #eee30c;
   border-color: #eee30c;
@@ -32,7 +33,7 @@ body {
   h2 {
     font-family: 'Luckiest Guy', cursive;
   }
-  h3{
+  h3 {
     font-family: 'Lato', serif;
     font-style: italic;
     font-weight: bold;
@@ -113,10 +114,10 @@ body {
             width: 314px;
             height: 128px;
             text-align: center;
-            h2{
+            h2 {
               color: #127ea5;
             }
-            p{
+            p {
               font-family: 'Lato', serif;
               color: #ded90e;
               font-weight: bold;
@@ -214,7 +215,6 @@ body {
           &:nth-child(2) {
             border-bottom: dotted #cccccc;
           }
-
           .media {
             width: 458px;
           }
@@ -310,6 +310,100 @@ body {
       }
     }
   }
+  .s6 {
+    h2{
+      text-align: center;
+      color: #ded90e;
+    }
+    background: #7ebee0;
+    background: #7ebee0 url(../img/earth.png) no-repeat center;
+    background-size: 60%;
+    .reviews {
+      padding: 50px 0;
+      display: flex;
+      justify-content: center;
+      .row-cont {
+
+        font-size: 0;
+      }
+    }
+
+    .wrapper3d {
+      width: 300px;
+      height: 300px;
+      perspective: 800px;
+      transform-style: preserve-3d;
+      position: relative;
+      &:hover {
+        .front {
+          transform: rotateY(-180deg);
+        }
+        .back {
+          transform: rotateY(0deg);
+        }
+      }
+      &:before {
+        content: ""; //padding hack
+        display: block;
+        padding-bottom: 100%;
+      }
+    }
+
+    .front, .back {
+      transition: transform 0.6s ease-in, background 0.6s ease-in;
+      top: 0;
+      left: 0;
+      position: absolute;
+      transform-style: preserve-3d;
+      backface-visibility: hidden;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .front {
+      background-color: #dbdbdb;
+      z-index: 2;
+    }
+
+    .back {
+      z-index: 1;
+      transform: rotateY(180deg);
+      background-color: rgba(0, 0, 0, 0.2);
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+
+    .wrapper3d .bg-light {
+      background-color: #ebebeb;
+    }
+
+    .first-col,
+    .second-col,
+    .third-col {
+      width: 33.3333%;
+      font-size: 18px;
+      display: inline-block;
+
+    }
+    .our-services__subtitle {
+      font-style: italic;
+    }
+    .our-services__third-col {
+      vertical-align: top;
+      text-align: center;
+    }
+    .our-services__dscr {
+      font-style: italic;
+      font-size: 18px;
+    }
+  }
   .s5 {
     padding-top: 24px;
     background: #127ea5;
@@ -355,6 +449,9 @@ body {
           i {
             font-size: 20px;
             color: #9ad7ee;
+            &:hover {
+              color: #0f6686;
+            }
           }
         }
       }
@@ -378,7 +475,6 @@ body {
         }
         .btn-blue {
           margin-top: 10px;
-
         }
       }
     }
@@ -388,6 +484,17 @@ body {
     background-color: #127ea5;
     text-align: center;
     color: #FFFFFF;
+  }
+  .back-to-top {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    display: inline-block;
+    z-index: 5;
+    width: 45px;
+    height: 61px;
+    background: url(../img/air_balloon_PNG19382.png) no-repeat center;
+    background-size: 42px;
   }
 }
 
