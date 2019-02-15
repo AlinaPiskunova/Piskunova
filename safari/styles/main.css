@@ -14056,14 +14056,6 @@ body .s1 .section-inner {
     width: 100%;
   }
 }
-@media (max-width: 920px) {
-  body .s1 .section-inner {
-    width: 100%;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-  }
-}
 @media (max-width: 2560px) {
   body .s1 .section-inner {
     justify-content: space-around;
@@ -14221,12 +14213,7 @@ body .clouds {
   height: 460px;
   background: #127ea5;
 }
-@media (max-width: 1020px) {
-  body .clouds {
-    height: 700px;
-  }
-}
-@media (max-width: 768px) {
+@media (max-width: 1034px) {
   body .clouds {
     height: 700px;
   }
@@ -14265,20 +14252,24 @@ body .s3 .section-inner {
   left: 10%;
   z-index: 4;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 @media (max-width: 1280px) {
   body .s3 .section-inner {
     width: 98%;
-    top: -350px;
+    top: -594px;
     left: 1%;
+    flex-wrap: wrap;
   }
 }
-@media (max-width: 1280px) and (max-width: 920px) and (max-width: 768px) {
+@media (max-width: 1034px) {
   body .s3 .section-inner {
+    width: 700px;
     top: -650px;
-    left: 20%;
+    justify-content: center;
+    flex-wrap: wrap;
+    left: 0;
+    right: 0;
   }
 }
 body .s3 .section-inner .special, body .s3 .section-inner .tabs-summer {
