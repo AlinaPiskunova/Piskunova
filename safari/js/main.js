@@ -6,9 +6,6 @@
             menu.toggleClass('visible');
             $(this).toggleClass('menu-opened');
         });
-
-
-
         var w = $(window),
             b1 = $('.decoration:nth-child(1)'),
             b2 = $('.decoration:nth-child(2)'),
@@ -22,8 +19,12 @@
             var scrollTop = w.scrollTop();
             b1.css('top', b1b - scrollTop / 3 + 'px');
             b2.css('top', b2b - scrollTop / 5 + 'px');
-if (scrollTop > 60) {$(".scroll.back-to-top").addClass("visible");}
-else {$(".scroll.back-to-top").removeClass("visible");}
+            if (scrollTop > 60) {
+                $(".scroll.back-to-top").addClass("visible");
+            }
+            else {
+                $(".scroll.back-to-top").removeClass("visible");
+            }
         });
 
         function fly() {
@@ -32,6 +33,7 @@ else {$(".scroll.back-to-top").removeClass("visible");}
                 top: '-120px'
             }, 2000);
         }
+
         img.on('click', function () {
             fly();
         });
