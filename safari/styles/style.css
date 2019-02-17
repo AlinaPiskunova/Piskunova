@@ -75,7 +75,7 @@ a.lightzoom {
   position: absolute;
   top: 2%;
   right: 2%;
-  background: url(img/close_blue.png) no-repeat 5px 5px;
+  background: url(../img/close_blue.png) no-repeat 5px 5px;
   background-size: 30px;
   width: 48px;
   height: 44px;
