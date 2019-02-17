@@ -13930,7 +13930,6 @@ body header .section-inner .nav-bar {
   }
 }
 body header .section-inner .nav-bar a {
-  margin-left: 30px;
   color: white;
 }
 body header .section-inner .nav-bar .my-style {
@@ -13977,6 +13976,12 @@ body header .section-inner .nav-bar ul.visible {
   background: #299fca;
   border-radius: 25px;
   z-index: 4;
+}
+@media (max-width: 426px) {
+  body header .section-inner .nav-bar ul.visible {
+    border-radius: 6px;
+    font-size: 10px;
+  }
 }
 @media (max-width: 1040px) {
   body header .section-inner .nav-bar ul {
@@ -14080,15 +14085,34 @@ body .s1 .section-inner .fly-propose.pos-relative {
   margin-top: 100px;
   z-index: 2;
 }
+@media (max-width: 426px) {
+  body .s1 .section-inner .fly-propose.pos-relative {
+    background-position: center;
+    background-size: 90%;
+  }
+}
 body .s1 .section-inner .fly-propose.pos-relative img.pos-absolute {
   top: 39px;
   left: 6px;
+}
+@media (max-width: 426px) {
+  body .s1 .section-inner .fly-propose.pos-relative img.pos-absolute {
+    width: 41%;
+    left: 18px;
+  }
 }
 body .s1 .section-inner .fly-propose.pos-relative #carouselExampleControls {
   width: 314px;
   overflow: hidden;
   height: 280px;
   margin: 108px 0 0 271px;
+}
+@media (max-width: 426px) {
+  body .s1 .section-inner .fly-propose.pos-relative #carouselExampleControls {
+    width: 280px;
+    height: 159px;
+    margin: 93px 0 0 84px;
+  }
 }
 body .s1 .section-inner .fly-propose.pos-relative #carouselExampleControls .carousel-control-prev {
   top: 32px;
@@ -14099,6 +14123,14 @@ body .s1 .section-inner .fly-propose.pos-relative #carouselExampleControls .caro
     top: -31px;
     left: 7.4px;
   }
+}
+@media (max-width: 1280px) and (max-width: 426px) {
+  body .s1 .section-inner .fly-propose.pos-relative #carouselExampleControls .carousel-control-prev {
+    top: -82px;
+    left: 4.4px;
+  }
+}
+@media (max-width: 1280px) {
   body .s1 .section-inner .fly-propose.pos-relative #carouselExampleControls .carousel-control-prev img {
     width: 30px;
   }
@@ -14112,6 +14144,14 @@ body .s1 .section-inner .fly-propose.pos-relative #carouselExampleControls .caro
     top: -55px;
     left: 200.4px;
   }
+}
+@media (max-width: 1280px) and (max-width: 426px) {
+  body .s1 .section-inner .fly-propose.pos-relative #carouselExampleControls .carousel-control-next {
+    top: -88px;
+    left: 205.4px;
+  }
+}
+@media (max-width: 1280px) {
   body .s1 .section-inner .fly-propose.pos-relative #carouselExampleControls .carousel-control-next img {
     width: 30px;
   }
@@ -14244,6 +14284,7 @@ body .clouds .relative .decoration:nth-child(1) {
 }
 body .clouds .relative .decoration:nth-child(2) {
   background-image: url("../img/cloud 2.png");
+  background-size: cover;
   right: 0;
   top: -238px;
   z-index: 1;
@@ -14272,6 +14313,15 @@ body .s3 .section-inner {
     right: 0;
   }
 }
+@media (max-width: 426px) {
+  body .s3 .section-inner {
+    width: 400px;
+    top: -670px;
+    justify-content: center;
+    left: 0;
+    right: 0;
+  }
+}
 body .s3 .section-inner .special, body .s3 .section-inner .tabs-summer {
   width: 500px;
 }
@@ -14287,11 +14337,26 @@ body .s3 .section-inner .special .my-card {
   max-width: 458px;
   height: 120px;
 }
+@media (max-width: 426px) {
+  body .s3 .section-inner .special .my-card {
+    max-width: 310px;
+  }
+}
 body .s3 .section-inner .special .my-card:nth-child(2) {
   border-bottom: dotted #cccccc;
 }
 body .s3 .section-inner .special .my-card .media {
   width: 458px;
+}
+@media (max-width: 426px) {
+  body .s3 .section-inner .special .my-card .media {
+    width: 310px;
+  }
+}
+@media (max-width: 426px) {
+  body .s3 .section-inner .special .my-card .media .media-body {
+    width: 310px;
+  }
 }
 body .s3 .section-inner .special .my-card .btn.btn-primary {
   background-color: #eee30c;
@@ -14307,6 +14372,30 @@ body .s3 .section-inner .special .my-card .btn.btn-primary:hover {
   transform: scale(1.08);
   transition: 0.1s 0.1s ease-in;
   transition-property: transform;
+}
+@media (max-width: 426px) {
+  body .s3 .section-inner .special .my-card .btn.btn-primary {
+    background-color: #eee30c;
+    border-color: #eee30c;
+    border-radius: 14px;
+    width: 120px;
+    height: 33px;
+    line-height: 1;
+    margin-left: 170px;
+    color: #299fca;
+  }
+  body .s3 .section-inner .special .my-card .btn.btn-primary:hover {
+    transform: scale(1.08);
+    transition: 0.1s 0.1s ease-in;
+    transition-property: transform;
+  }
+}
+@media (max-width: 426px) {
+  body .s3 .section-inner .tabs-summer {
+    width: 405px;
+    height: 300px;
+    overflow: auto;
+  }
 }
 body .s3 .section-inner .tabs-summer .offer {
   width: 176px;
@@ -14428,10 +14517,17 @@ body .s6 .wrapper3d {
   transform-style: preserve-3d;
   position: relative;
 }
-@media (max-width: 920px) {
+@media (max-width: 1025px) {
   body .s6 .wrapper3d {
     width: 200px;
     height: 200px;
+  }
+}
+@media (max-width: 1025px) and (max-width: 426px) {
+  body .s6 .wrapper3d {
+    width: 110px;
+    height: 110px;
+    font-size: 10px;
   }
 }
 body .s6 .wrapper3d:hover .front {
@@ -14490,6 +14586,11 @@ body .s5 {
 body .s5 .section-inner {
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 426px) {
+  body .s5 .section-inner {
+    flex-wrap: wrap;
+  }
 }
 body .s5 .section-inner .btn-blue {
   width: 90px;
